@@ -1,0 +1,13 @@
+nav ul {border: 2px ridge black;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {border: 1px ridge black;
+    border-radius: 40%;
+    padding: 5px;
+    font-size:2rem;
+    margin-right: 170px;
+}
