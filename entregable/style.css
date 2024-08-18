@@ -104,7 +104,7 @@ body {
     background-color: var(--color1);
 }
 .gridItem:hover {
-    cursor: grab;
+    cursor: pointer;
     opacity: 70%;
     scale: 1.01;
 }
