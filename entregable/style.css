@@ -103,6 +103,11 @@ body {
 
     background-color: var(--color1);
 }
+.gridItem:hover {
+    cursor: grab;
+    opacity: 70%;
+    scale: 1.01;
+}
 
 .item1 {}
 
