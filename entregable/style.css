@@ -16,6 +16,8 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el ancho total de los elementos */
+    z-index: 0;
+    position: static;
 }
 
 body {
@@ -109,7 +111,7 @@ body {
 }
 
 .gridItem:hover {
-    cursor: grab;
+    cursor: pointer;
     opacity: 70%;
     scale: 1.01;
 }
@@ -126,6 +128,7 @@ margin-bottom: 0rem 0px;
 
     background-color: var(--color2);
 }
+
 
 /* Mobile-first design */
 /* Ajustes generales para pantallas pequeñas */
