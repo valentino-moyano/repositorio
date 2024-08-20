@@ -24,6 +24,55 @@ body {
     background-color: var(--color1);
 }
 
+header {
+    display: flex;
+    flex-direction: column; /* Permite al contenido vertical */
+    align-items: center; /* Centra el contenido horizontalmente */
+    justify-content: center; /* Opcional: centra el contenido verticalmente */
+    height: auto; /* Ajusta la altura automáticamente en función del contenido */
+}
+
+/* Estilo para la imagen */
+.imgPromocional {
+    max-width: 70%; /* Ajusta el tamaño máximo de la imagen al 70% del contenedor */
+    height: auto; /* Mantiene la relación de aspecto de la imagen */
+    display: block; /* Asegura que la imagen no tenga espacio adicional debajo */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+/* Mobile-first design */
+/* Ajustes generales para pantallas pequeñas */
+header {
+    padding: 0.5rem; /* Menos relleno en pantallas pequeñas */
+}
+
+.imgPromocional {
+    max-width: 80%; /* Mayor flexibilidad en pantallas pequeñas */
+}
+
+/* Media query para tablets */
+@media screen and (min-width: 600px) {
+    header {
+        padding: 1rem; /* Más relleno en pantallas medianas */
+    }
+
+    .imgPromocional {
+        max-width: 75%; /* Ajuste para pantallas medianas */
+    }
+}
+
+/* Media query para desktops */
+@media screen and (min-width: 1024px) {
+    header {
+        padding: 1rem; /* Mantiene el relleno en pantallas grandes */
+    }
+
+    .imgPromocional {
+        max-width: 50%; /* Ajusta para pantallas grandes */
+    }
+}
+
+
 .text {
     color: var(--color3);
     font-family: "Montserrat", sans-serif;
@@ -47,7 +96,7 @@ body {
     padding: 1rem;
     margin-bottom: 1rem;
 
-    background-color: var(--color2);
+    background-color: var(--color4);
 }
 
 .nav h1 {
@@ -92,7 +141,7 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Ajusta el número de columnas según el espacio disponible */
     grid-gap: 10px;
     grid-template-rows: auto;
-
+  
     width: 100%;
     justify-content: center;
 
@@ -104,7 +153,7 @@ body {
     justify-content: center;
     align-items: center;
 
-    background-color: var(--color1);
+    background-color: var(--color5);
     aspect-ratio: 1 / 1; /* Mantén la relación de aspecto cuadrada */
     width: 100%; /* El ancho se ajusta automáticamente */
     max-width: 150px; /* Tamaño máximo para evitar que los elementos crezcan demasiado */
@@ -112,9 +161,10 @@ body {
 }
 
 .gridItem:hover {
+    background-color: var(--color4);
     cursor: pointer;
-    opacity: 70%;
-    scale: 1.01;
+    opacity: 130%;
+    scale: 1.06;
 }
 
 .footer {
