@@ -13,21 +13,29 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 
-<!-- menu despegable-->
-            <div id="carrito"></div>
-
 <body>
     <nav class="nav">
         <h1 class="textTitle">Latidos</h1>
 
         <div id="carritoBtn">
             <!-- boton carrito -->
-            <img class="imgBtnC" src="./fotos/bag.png">
-            
+            <img src="./fotos/bag.png">
+            <div class="cntProd">0</div>
+
+        </div>
+        <div id="carrito">
+
+            <div class="containerProduct">
+                
+            </div>
+
+            <div class="precioT">
+                <p>Total: $0</p>
+            </div>
         </div>
     </nav>
 
-
+    <!-- menu despegable-->
     <header>
         <img class="imgPromocional" src="./fotos/latidos-logo.png">
         <img class="imgPromocional" src="./fotos/img-aside.jpg">
@@ -37,24 +45,36 @@
         <div class="textDeSelector">
             <p>Aca estaria el selector:</p>
         </div>
-            <ul class="gridContainer">
-                <li class="gridItem item1">
-                    Anillos
-                </li>
-                <li class="gridItem item2">
-                    Brazaletes
-                </li>
-                <li class="gridItem">
-                    <img class=" item3" src="./fotos/ejem.jpeg">
-                    <span>Collares</span>
-                </li>
-                <li class="gridItem item4">
-                    Aros
-                </li>
-                <li class="gridItem item5">
-                    Relojes
-                </li>
-            </ul>
+        <ul class="gridContainer">
+            <li class="gridItem item1">
+                Anillos
+            </li>
+            <li class="gridItem item2">
+                Brazaletes
+            </li>
+            <li class="gridItem">
+                <img class="item3" src="./fotos/ejem.jpeg">
+                <span>Collares</span>
+            </li>
+            <li class="gridItem item4">
+                Aros
+            </li>
+            <li class="gridItem item5">
+                Relojes
+            </li>
+            <li>
+                <div class="rawProducto botonTemporal">
+                    <div id="cuantity">
+                        1
+                    </div>
+                    <h1 id="itemName">collar</h1>
+    
+                    <div id="price">
+                       <p>$50</p> 
+                    </div>
+                </div>
+            </li>
+        </ul>
     </main>
 
     <footer class="footer">
