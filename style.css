@@ -214,3 +214,35 @@ main {
 
     background-color: var(--color2);
 }
+
+/* modo escuro*/
+body{
+    margin: 0;
+    padding: 0;
+    transition: background-color 0,5s, color 0.5s;
+}
+.light-mode{
+    background-color: white;
+    color: black;
+}
+
+.dark-mode{
+    background-color: black;
+    color: white;
+}
+
+.toggle-button{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #6f0808;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.toggle-button:hover{
+    background-color: #4b0808;
+}
