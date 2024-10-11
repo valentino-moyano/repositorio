@@ -227,7 +227,7 @@ body{
 }
 
 .dark-mode{
-    background-color: black;
+    background-color: rgb(50, 48, 48);
     color: white;
 }
 
