@@ -249,29 +249,37 @@ body{
 
 .gridContainerP {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    grid-auto-rows: auto;
-    grid-gap: -60px;
-    padding: 1rem;
+     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      grid-auto-rows: auto;
+       grid-gap: -60px;
+        padding: 1rem;
 }
 
 .gridItemP {
     display: flex;
     justify-content: center;
-    justify-self: center;
     align-items: center;
-    background-color: gold;
-    aspect-ratio: 1 / 1;
-    width: 50%;
+    background-color: var(--color2); /* Color del fondo del contenedor */
+    width: 100%; /* Tamaño del contenedor */
+    aspect-ratio: 1 / 1; /* Mantener proporción cuadrada */
     list-style-type: none;
     position: relative;
-    transition: scale 0.3s ease;
-    scale: 1;
+    transition: transform 0.3s ease;
+    overflow: hidden; /* Evitar que el contenido salga del contenedor */
 }
 
+gridItem img {
+    max-width: 100%;  /* Ajusta la imagen para que no exceda el ancho del contenedor */
+    max-height: 100%; /* Ajusta la imagen para que no exceda la altura del contenedor */
+    object-fit: scale-down; /* Ajusta la imagen para que se haga más pequeña si es necesario */
+    width: 100%; /* Hace que la imagen ocupe todo el ancho disponible */
+    height: 100%; /* Hace que la imagen ocupe todo el alto disponible */
+    z-index: 2;
+}
+
+
 .gridItemP:hover {
-    background-color: goldenrod;
+    background-color: var(--color4); /* Cambia el color en hover */
     cursor: pointer;
-    opacity: 190%;
-    scale: 20px;
+    transform: scale(1.05); /* Aumenta el tamaño del contenedor al hacer hover */
 }
