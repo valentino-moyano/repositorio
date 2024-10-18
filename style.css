@@ -257,29 +257,35 @@ body{
 
 .gridItemP {
     display: flex;
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
-    background-color: var(--color2); /* Color del fondo del contenedor */
-    width: 100%; /* Tamaño del contenedor */
-    aspect-ratio: 1 / 1; /* Mantener proporción cuadrada */
+    background-color: var(--color2); 
+    width: 100%;
+    aspect-ratio: auto; 
     list-style-type: none;
     position: relative;
     transition: transform 0.3s ease;
-    overflow: hidden; /* Evitar que el contenido salga del contenedor */
+    overflow: hidden;
+    padding: 10px;
 }
 
 gridItem img {
-    max-width: 100%;  /* Ajusta la imagen para que no exceda el ancho del contenedor */
-    max-height: 100%; /* Ajusta la imagen para que no exceda la altura del contenedor */
-    object-fit: scale-down; /* Ajusta la imagen para que se haga más pequeña si es necesario */
-    width: 100%; /* Hace que la imagen ocupe todo el ancho disponible */
-    height: 100%; /* Hace que la imagen ocupe todo el alto disponible */
-    z-index: 2;
+    max-width: 80%; 
+    max-height: 80%;
+    object-fit: contain;
+    margin-bottom: 0.5rem; 
+}
+
+gridItem span {
+    text-align: center;
+    font-size: 1rem;
+    color: var(--color3);
 }
 
 
 .gridItemP:hover {
-    background-color: var(--color4); /* Cambia el color en hover */
+    background-color: var(--color4);
     cursor: pointer;
-    transform: scale(1.05); /* Aumenta el tamaño del contenedor al hacer hover */
+    transform: scale(1.05); 
 }
